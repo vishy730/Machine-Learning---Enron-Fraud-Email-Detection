@@ -11,4 +11,6 @@ aS'shared_receipt_with_poi'
 p5
 aS'expenses'
 p6
+aS'other'
+p7
 a.

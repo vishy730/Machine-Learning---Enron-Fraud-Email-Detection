@@ -19,7 +19,8 @@ features_list = ['poi',
                  'fraction_from_poi',
                  'exercised_stock_options',
                  'shared_receipt_with_poi',
-                 'expenses']
+                 'expenses',
+                 'other']
 
 ### Load the dictionary containing the dataset
 data_dict = pickle.load(open("final_project_dataset.pkl", "r"))
@@ -135,10 +136,7 @@ from sklearn.svm import SVC
 #Decision Tree Classification
 from sklearn import tree
 #
-clf = tree.DecisionTreeClassifier(criterion='gini',
-                                  max_depth=6, max_features=None, max_leaf_nodes=None,
-                                  min_samples_leaf=1, min_samples_split=12,
-                                  random_state=42, splitter='best')
+clf = tree.DecisionTreeClassifier(random_state=42, min_samples_split=12,max_depth=6, splitter='best')
 clf = clf.fit(features, labels)
 
 
