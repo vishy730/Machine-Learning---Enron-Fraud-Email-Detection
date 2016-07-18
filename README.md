@@ -34,6 +34,18 @@ We have 146 variables and 21 features in this dataset to test. Here is one of th
 				}
 	}]
 
+Of the 146 records, 18 are labeled as persons of interest and others as non-POI. So had we considered all the persons as POIs, there would be a chance of getting an accuracy of 90% which is a bit unrealistic in real world. This is called as unbalanced allocation between the classes. 
+One tactic we can use is to get more data so that we can get balanced allocation but that is not possible in our case. So in these cases Accuracy is not the metric to use when working with an imbalanced dataset. It will be definitely misleading.There are metrics that have been designed to tell you a more truthful story when working with imbalanced classes.
+
+The following performance metrics can give more insight into the accuracy of the model than traditional classification accuracy.
+
+* Precision: A measure of a classifiers exactness.
+* Recall: A measure of a classifiers completeness
+* F1 Score (or F-score): A weighted average of precision and recall.
+
+We have also used StatifiedShuffleSplit for splitting the training and test data set to get different folds.
+
+
 ####Outliers
 After observing the data, we could see that Total and The Travel Agency in the Park were considered as outliers and removed them.
 
