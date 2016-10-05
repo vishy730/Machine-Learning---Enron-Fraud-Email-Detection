@@ -243,7 +243,7 @@ References
 - [Recursive Feature Elimination][3]
 - [Selecting good features – Part I: univariate selection][4]
 - [Cross-validation: the right and the wrong way][6]
-- [Accuracy, Precision and Recall(in Russian)][6] 
+
 
 [1]: http://scikit-learn.org/stable/documentation.html
 [2]: http://amueller.github.io/sklearn_tutorial/
